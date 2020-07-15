@@ -1,11 +1,8 @@
-import React from 'react'
+import React from 'react';
 
 export const Header = () => {
-    return (
-        <h2>
-            Budget Tracker
-        </h2>
-    )
-}
+  console.log('we are here');
+  return <h2>Budget Tracker</h2>;
+};
 
 export default Header;

@@ -9,11 +9,13 @@ import { GlobalProvider } from './context/GlobalState';
 
 import './App.css';
 
+import * as serviceWorker from './serviceWorker';
+
 function App() {
   return (
     <GlobalProvider>
       <Header />
-      <div className="container">
+      <div className='container'>
         <Balance />
         <IncomeExpenses />
         <TransactionList />
@@ -23,4 +25,5 @@ function App() {
   );
 }
 
+serviceWorker.unregister();
 export default App;
